@@ -1,5 +1,10 @@
 import java.util.*; 
 
+/*
+*@author : Siva Pranav Mandadi
+*@since : 10/3/2019
+*/
+
 public class Bank{
 	float accnumber;
 	String customername = new String("");
@@ -8,7 +13,6 @@ public class Bank{
 	int phonenumber;
 	int depositnumber;
 	int withdrawalamt;
-	// String [] transaction_history;
 	List<String [] > transaction_history = new ArrayList<String []>();  
 
 	
@@ -30,8 +34,7 @@ public class Bank{
 			depositnumber += 1;
 			transaction_history.add(new String []{"Deposit" , Float.toString(amt)});
 
-			//return "Deposited";
-			//System.out.println(transaction_history);
+			
 		}
 		else if(depositnumber >= 3) {
 			System.out.println("You have reached the Limit for # of Transactions\n");
@@ -39,7 +42,7 @@ public class Bank{
 		else{
 			System.out.println("Error Occureed w.r.t. amt\n");
 		}
-		//return "Testing";	
+		
 	}
 	
 	public void withdraw(float amt) {
@@ -56,7 +59,7 @@ public class Bank{
 		else{
 			System.out.println("Insufficient Funds or Withdrawal amount Limit Reached \n");
 		}
-	//return balance;
+	
 	}
 	
 	public void getTransactionHistory(){
