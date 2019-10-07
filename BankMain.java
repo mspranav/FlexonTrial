@@ -53,7 +53,7 @@ public class BankMain extends  Bank{
 
 					case 5: System.exit(0);
 
-					default: System.out.println("Please enter a valid choice");
+					default: System.out.println("\n\nPlease enter a valid choice");
 				}
 			}
 			
